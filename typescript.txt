@@ -1,0 +1,895 @@
+Microsoft Windows [Version 10.0.18362.720]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\sophi>ssh -p 922 pallans@labs.cs.wwu.edu
+pallans@labs.cs.wwu.edu's password:
+Warning: Permanently added the ECDSA host key for IP address '[140.160.137.182]:922' to the list of known hosts.
+pallans@cf418-20.cs.wwu.edu's password:
+Welcome to the WWU Computer Science lab environment
+
+If you are a new user or have questions regarding CS systems
+or software, please visit the following URL or contact
+CS.Support@wwu.edu for assistance:
+
+https://support.cs.wwu.edu/
+
+pallans@cf418-20:~$ mkdir csci/241
+mkdir: cannot create directory ‘csci/241’: No such file or directory
+pallans@cf418-20:~$ mkdir csci-241
+pallans@cf418-20:~$ cd csci-241
+pallans@cf418-20:~/csci-241$ git clone https://github.com/csci241-20s/lab-1-spallanck
+Cloning into 'lab-1-spallanck'...
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 23 (delta 5), reused 2 (delta 1), pack-reused 0
+Unpacking objects: 100% (23/23), done.
+pallans@cf418-20:~/csci-241$ ls
+lab-1-spallanck
+pallans@cf418-20:~/csci-241$ cd lab-1-spallanck
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git config --global user.name "Sophie Pallanck"
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git config --global user.email pallans@wwu.edu
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ touch writeup.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git add writeup.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git commit -m "Added empty writeup"
+[master e27944b] Added empty writeup
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 writeup.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git push
+Username for 'https://github.com': spallanck
+Password for 'https://spallanck@github.com':
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 273 bytes | 273.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-spallanck
+   4dcc6ab..e27944b  master -> master
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ nano
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ pallans@cf418-20:~/csci-241/lab-1-spallanck$ git add writeup.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git commit -m "Added part 1 (names) to writeup"
+[master 07cabed] Added part 1 (names) to writeup
+ 1 file changed, 1 insertion(+)
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ nano
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ pallans@cf418-20:~/csci-241/lab-1-spallanck$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   writeup.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git add writeup.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   writeup.txt
+
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git commit -m "Added part 2 (hobby) to writeup"
+[master 0152e6f] Added part 2 (hobby) to writeup
+ 1 file changed, 1 insertion(+)
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git push
+Username for 'https://github.com': spallanck
+Password for 'https://spallanck@github.com':
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 569 bytes | 189.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-spallanck
+   e27944b..0152e6f  master -> master
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ touch username.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git add username.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git commit -m "Added empty username"
+[master 3d3acc3] Added empty username
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 username.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ nano
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ pallans@cf418-20:~/csci-241/lab-1-spallanck$ git add username.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git commit -m "Added usernames to usernames.txt"
+[master 8e02843] Added usernames to usernames.txt
+ 1 file changed, 1 insertion(+)
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git push
+Username for 'https://github.com': spallanck
+Password for 'https://spallanck@github.com':
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 544 bytes | 272.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-spallanck
+   0152e6f..8e02843  master -> master
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git log
+commit 8e02843eefc78d468ea46714f4f0a80a04add9f0 (HEAD -> master, origin/master, origin/HEAD)
+Author: Sophie Pallanck <pallans@wwu.edu>
+commit 8e02843eefc78d468ea46714f4f0a80a04add9f0 (HEAD -> master, origin/master, origin/HEAD)
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:42:21 2020 -0700
+
+    Added usernames to usernames.txt
+
+commit 3d3acc31c3ad3af2e9b1d66cd46ed4ba86ab3565
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:38:48 2020 -0700
+
+    Added empty username
+
+commit 0152e6fe2c6e4f7c7371fab1b636203a9a172b6f
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:36:00 2020 -0700
+
+    Added part 2 (hobby) to writeup
+
+commit 07cabedb7fca193d33c9703190ce2b141c607f20
+Author: Sophie Pallanck <pallans@wwu.edu>
+    Added part 1 (names) to writeup
+
+commit e27944b4a56cbb0b13f0a3298fe3f5a987023141
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:30:57 2020 -0700
+
+    Added empty writeup
+
+commit 4dcc6ab9b3a82c578a3636fa11abb0b0abe96e1a
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 13:21:00 2020 -0700
+
+    Delete writeup.txt
+
+commit fa01fa7f725e872f42158faedaee58ad97abbec6
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 13:14:10 2020 -0700
+
+    Update writeup.txt
+
+commit e2fcd30dbf8d5a169f492ff83697a3be0feaa308
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 12:56:55 2020 -0700
+
+    Update writeup.txt
+
+commit 50d2619aac3116c6b1e19e38b688cc00d591f14b
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+commit 8e02843eefc78d468ea46714f4f0a80a04add9f0 (HEAD -> master, origin/master, origin/HEAD)
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:42:21 2020 -0700
+
+    Added usernames to usernames.txt
+
+commit 3d3acc31c3ad3af2e9b1d66cd46ed4ba86ab3565
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:38:48 2020 -0700
+
+    Added empty username
+
+commit 0152e6fe2c6e4f7c7371fab1b636203a9a172b6f
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:36:00 2020 -0700
+
+    Added part 2 (hobby) to writeup
+
+commit 07cabedb7fca193d33c9703190ce2b141c607f20
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:33:09 2020 -0700
+
+    Added part 1 (names) to writeup
+
+commit e27944b4a56cbb0b13f0a3298fe3f5a987023141
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:30:57 2020 -0700
+
+    Added empty writeup
+
+commit 4dcc6ab9b3a82c578a3636fa11abb0b0abe96e1a
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 13:21:00 2020 -0700
+
+    Delete writeup.txt
+
+commit fa01fa7f725e872f42158faedaee58ad97abbec6
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 13:14:10 2020 -0700
+
+    Update writeup.txt
+
+commit e2fcd30dbf8d5a169f492ff83697a3be0feaa308
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 12:56:55 2020 -0700
+
+    Update writeup.txt
+
+commit 50d2619aac3116c6b1e19e38b688cc00d591f14b
+commit 8e02843eefc78d468ea46714f4f0a80a04add9f0 (HEAD -> master, origin/master, origin/HEAD)
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:42:21 2020 -0700
+
+    Added usernames to usernames.txt
+
+commit 3d3acc31c3ad3af2e9b1d66cd46ed4ba86ab3565
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:38:48 2020 -0700
+
+    Added empty username
+
+commit 0152e6fe2c6e4f7c7371fab1b636203a9a172b6f
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:36:00 2020 -0700
+
+    Added part 2 (hobby) to writeup
+
+commit 07cabedb7fca193d33c9703190ce2b141c607f20
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:33:09 2020 -0700
+
+    Added part 1 (names) to writeup
+
+commit e27944b4a56cbb0b13f0a3298fe3f5a987023141
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 13:30:57 2020 -0700
+
+    Added empty writeup
+
+commit 4dcc6ab9b3a82c578a3636fa11abb0b0abe96e1a
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 13:21:00 2020 -0700
+
+    Delete writeup.txt
+
+commit fa01fa7f725e872f42158faedaee58ad97abbec6
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 13:14:10 2020 -0700
+
+    Update writeup.txt
+
+commit e2fcd30dbf8d5a169f492ff83697a3be0feaa308
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 12:56:55 2020 -0700
+
+    Update writeup.txt
+
+commit 50d2619aac3116c6b1e19e38b688cc00d591f14b
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOC                                                                                                                  
+
+
+
+
+
+
+
+
+
+
+back)
+
+
+
+
+
+
+
+
+
+
+ ESCOC                                                                                                                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD                                                                                                                  
+
+
+
+
+
+
+
+
+
+
+back)
+
+
+
+
+
+
+
+
+
+
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+ ESCOD                                                                                                                  
+    Added empty writeup
+
+commit 4dcc6ab9b3a82c578a3636fa11abb0b0abe96e1a
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 13:21:00 2020 -0700
+
+    Delete writeup.txt
+
+commit fa01fa7f725e872f42158faedaee58ad97abbec6
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 13:14:10 2020 -0700
+
+    Update writeup.txt
+
+commit e2fcd30dbf8d5a169f492ff83697a3be0feaa308
+Author: spallanck <63314180+spallanck@users.noreply.github.com>
+Date:   Tue Apr 7 12:56:55 2020 -0700
+
+    Update writeup.txt
+
+commit 50d2619aac3116c6b1e19e38b688cc00d591f14b
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+HELP -- Press RETURN for more, or q when done...skipping...
+Author: Sophie Pallanck <pallans@wwu.edu>
+Date:   Tue Apr 7 12:50:08 2020 -0700
+
+    Added empty writeup
+
+commit c05d56c45ba498883b1397bb70d37f342c443754
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:59 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 74b130e9a8f327eada311dedb27161a7fc78316b (origin/feedback)
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:58 2020 -0700
+
+    Setting up GitHub Classroom Feedback
+
+commit 4027d936fa15b5e006b4c77ba181af415aac2c21
+Author: swehrwein <swehrwein@gmail.com>
+Date:   Tue Apr 7 11:36:57 2020 -0700
+
+    Initial commit
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git blame
+usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
+
+    <rev-opts> are documented in git-rev-list(1)
+
+    --incremental         Show blame entries as we find them, incrementally
+    -b                    Show blank SHA-1 for boundary commits (Default: off)
+    --root                Do not treat root commits as boundaries (Default: off)
+    --show-stats          Show work cost statistics
+    --progress            Force progress reporting
+    --score-debug         Show output score for blame entries
+    -f, --show-name       Show original filename (Default: auto)
+    -n, --show-number     Show original linenumber (Default: off)
+    -p, --porcelain       Show in a format designed for machine consumption
+    --line-porcelain      Show porcelain format with per-line commit information
+    -c                    Use the same output mode as git-annotate (Default: off)
+    -t                    Show raw timestamp (Default: off)
+    -l                    Show long commit SHA1 (Default: off)
+    -s                    Suppress author name and timestamp (Default: off)
+    -e, --show-email      Show author email instead of name (Default: off)
+    -w                    Ignore whitespace differences
+    --indent-heuristic    Use an experimental heuristic to improve diffs
+    --minimal             Spend extra cycles to find better match
+    -S <file>             Use revisions from <file> instead of calling git-rev-list
+    --contents <file>     Use <file>'s contents as the final image
+    -C[<score>]           Find line copies within and across files
+    -M[<score>]           Find line movements within and across files
+    -L <n,m>              Process only line range n,m, counting from 1
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git diff
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git diff writeup.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ touch dummy.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git add dummy.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ nano
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ pallans@cf418-20:~/csci-241/lab-1-spallanck$ git checkout
+A       dummy.txt
+Your branch is up to date with 'origin/master'.
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git rm dummy.txt
+error: the following file has staged content different from both the
+file and the HEAD:
+    dummy.txt
+(use -f to force removal)
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ -f
+-f: command not found
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git rm -f dummy.txt
+rm 'dummy.txt'
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git branch question3
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git checkout question3
+Switched to branch 'question3'
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ nano
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ pallans@cf418-20:~/csci-241/lab-1-spallanck$ git add writeup.txt
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git commit -m "Added part 3 (favorite song) to writeup"
+[question3 d699f65] Added part 3 (favorite song) to writeup
+ 1 file changed, 1 insertion(+)
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git merge question3
+Updating 8e02843..d699f65
+Fast-forward
+ writeup.txt | 1 +
+ 1 file changed, 1 insertion(+)
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git branch -d question3
+Deleted branch question3 (was d699f65).
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ cd src/main/java/lab1
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ gradle build
+
+Welcome to Gradle 6.1!
+
+Here are the highlights of this release:
+ - Dependency cache is relocatable
+ - Configurable compilation order between Groovy, Java & Scala
+ - New sample projects in Gradle's documentation
+
+For more details see https://docs.gradle.org/6.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Project directory '/home/pallans/csci-241/lab-1-spallanck/src/main/java/lab1' is not part of the build defined by settings file '/home/pallans/csci-241/lab-1-spallanck/settings.gradle'. If this is an unrelated build, it must have its own settings file.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ nano
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ cd src/main/java/lab1/
+-bash: cd: src/main/java/lab1/: No such file or directory
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ cd src/main/java/lab1/
+-bash: cd: src/main/java/lab1/: No such file or directory
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ grade build
+
+Command 'grade' not found, did you mean:
+
+  command 'glade' from snap glade (3.20.0.1)
+  command 'grape' from snap groovy (3.0.1)
+  command 'gradle' from deb gradle
+  command 'grace' from deb grace
+  command 'grads' from deb grads
+  command 'glade' from deb glade
+
+See 'snap info <snapname>' for additional versions.
+
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ gradle build
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Project directory '/home/pallans/csci-241/lab-1-spallanck/src/main/java/lab1' is not part of the build defined by settings file '/home/pallans/csci-241/lab-1-spallanck/settings.gradle'. If this is an unrelated build, it must have its own settings file.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 407ms
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ cd lab-1-spallanck/src/main/java/lab1/
+-bash: cd: lab-1-spallanck/src/main/java/lab1/: No such file or directory
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$  git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ git push
+Username for 'https://github.com': spallanck
+Password for 'https://spallanck@github.com':
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 370 bytes | 185.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-spallanck
+   8e02843..d699f65  master -> master
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ cd csci 241
+-bash: cd: too many arguments
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ cd csci-241
+-bash: cd: csci-241: No such file or directory
+pallans@cf418-20:~/csci-241/lab-1-spallanck/src/main/java/lab1$ cd
+pallans@cf418-20:~$ cd csci-241
+
+BUILD SUCCESSFUL in 7s
+5 actionable tasks: 5 executed
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ gradle run
+
+> Task :run
+Hello, world!
+
+BUILD SUCCESSFUL in 527ms
+2 actionable tasks: 1 executed, 1 up-to-date
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ nano
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ pallans@cf418-20:~/csci-241/lab-1-spallanck$ nano
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ pallans@cf418-20:~/csci-241/lab-1-spallanck$ grade run --args="fun"
+
+Command 'grade' not found, did you mean:
+
+  command 'grape' from snap groovy (3.0.1)
+  command 'glade' from snap glade (3.20.0.1)
+  command 'glade' from deb glade
+  command 'grace' from deb grace
+  command 'grads' from deb grads
+  command 'gradle' from deb gradle
+
+See 'snap info <snapname>' for additional versions.
+
+
+> Task :run---> 0% EXECUTING [51ms]
+Hello, world!
+
+BUILD SUCCESSFUL in 502ms
+2 actionable tasks: 1 executed, 1 up-to-date
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ nano
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ pallans@cf418-20:~/csci-241/lab-1-spallanck$ gradle run --args="fun"
+
+> Task :run
+Hello, fun
+
+BUILD SUCCESSFUL in 614ms
+2 actionable tasks: 2 executed
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git add src/main/java/lab1/Hello.java
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git commit -m "Hello now prints command line arg"
+[master 24dc4df] Hello now prints command line arg
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ git push
+Username for 'https://github.com': spallanck
+Password for 'https://spallanck@github.com':
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 492 bytes | 492.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/csci241-20s/lab-1-spallanck
+   d699f65..24dc4df  master -> master
+pallans@cf418-20:~/csci-241/lab-1-spallanck$ exit
+logout
+Connection to cf418-20.cs.wwu.edu closed.
+Connection to labs.cs.wwu.edu closed.
